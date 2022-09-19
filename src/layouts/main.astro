@@ -1,16 +1,15 @@
 ---
-import '../styles/tailwind.css'
 import Nav from '../components/Nav.astro';
 ---
 
 <html lang="en">
-	<head>
+	<head class="h-screen bg-adama">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	</head>
-	<body>
+	<body class="h-screen bg-adama">
 		<Nav/>
     <slot/>
 	</body>
