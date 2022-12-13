@@ -1,43 +1,284 @@
 ---
-import LinkedIn from '../components/logos/LinkedIn.astro';
-import GitHub from '../components/logos/GitHub.astro';
-import Portfolio from '../layouts/Portfolio.astro';
-import AccountLinks from '../components/AccountLinks.astro';
+import LinkedIn from "@logos/LinkedIn.astro";
+import GitHub from "@logos/GitHub.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
-<Portfolio>
-	<div class="container mt-20 leading-10 flex flex-col items-center mx-auto relative">
-		<div>
-				<span class="font-bold font-inter text-white md:text-2xl">
-						Hi there, my name is
-				</span>
-		</div>
-
-		<div>
-				<span class="bg-gradient-to-l from-blurama to-pinkrama text-transparent bg-clip-text font-bold font-inter text-4xl md:text-6xl">
+<BaseLayout>
+	<div class="m-10">
+		<main class="container mx-auto">
+			<div class="flex flex-col items-center">
+				<div class="mt-32">
+					<h1
+						class="animate-text bg-gradient-to-l from-blurama to-pinkrama bg-clip-text text-transparent font-bold font-inter md:text-8xl select-none"
+					>
 						Jericho Opsima
+					</h1>
+				</div>
+			</div>
+
+			<div class="flex justify-center">
+				<span class="font-inter text-white md:text-[1.3rem] opacity-20">
+					2<sup>nd</sup> year Computer Science student from the Philippines
 				</span>
-		</div>
+			</div>
 
-		<div class="absolute bottom-2 w-[28.5rem] h-3 opacity-40 from-pinkrama to-blurama bg-gradient-to-l"></div>
+			<div class="flex gap-x-5 justify-center">
+				<GitHub />
+				<LinkedIn />
+			</div>
+
+			<section class="mt-12">
+				<div class="mx-auto max-w-sm text-center">
+					<span class="font-aboreto text-3xl border-b-2 border-blurama text-white">Skills</span>
+				</div>
+				<div class="flex gap-x-14 justify-center text-lg py-6 sm:py-8 lg:py-12">
+					<div>
+						<img
+							src="./assets/solid.png"
+							loading="lazy"
+							alt="Photo by Lorenzo Herrera"
+							class="w-16 h-16 object-cover object-center inset-0 group-hover:scale-110 transition duration-200"
+						/>
+						<span class="font-inter text-gray-600">SolidJS</span>
+
+						<div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+							<div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 25%"></div>
+						</div>
+					</div>
+
+					<div class="flex justify-center items-center flex-col">
+						<img
+							src="./assets/java.png"
+							loading="lazy"
+							alt="Photo by Lorenzo Herrera"
+							class="w-16 h-16 object-contain object-center inset-0 group-hover:scale-110 transition duration-200"
+						/>
+						<span class="font-inter text-gray-600">Java</span>
+
+						<div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+							<div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 65%"></div>
+						</div>
+					</div>
+
+					<div class="flex justify-center items-center flex-col">
+						<img
+							src="./assets/tailwind.png"
+							loading="lazy"
+							alt="Photo by Lorenzo Herrera"
+							class="w-16 h-16 object-cover object-center inset-0 group-hover:scale-110 transition duration-200"
+						/>
+						<span class="font-inter text-gray-600">TailwindCSS</span>
+
+						<div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+							<div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
+						</div>
+					</div>
+
+					<div>
+						<div class="flex justify-center">
+							<img
+								src="./assets/ts.png"
+								loading="lazy"
+								alt="Photo by Lorenzo Herrera"
+								class="w-16 h-16 object-cover object-center inset-0 group-hover:scale-110 transition duration-200 mr-8"
+							/>
+							<img
+								src="./assets/js.png"
+								loading="lazy"
+								alt="Photo by Lorenzo Herrera"
+								class="w-16 h-16 object-cover object-center inset-0 group-hover:scale-110 transition duration-200"
+							/>
+						</div>
+
+						<span class="font-inter text-gray-600">Typescript | Javascript</span>
+
+						<div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+							<div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 65%"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="mt-12">
+				<div class="mx-auto max-w-sm text-center">
+					<span class="font-aboreto text-3xl border-b-2 border-blurama text-white"> Blog</span>
+				</div>
+
+				<div class="py-6 sm:py-8 lg:py-12">
+					<div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+						<div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8">
+							<!-- article - start -->
+							<a
+								href="#"
+								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
+							>
+								<img
+									src="./assets/ahmad.jpg"
+									loading="lazy"
+									alt="Photo by Minh Pham"
+									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+								/>
+
+								<div
+									class="bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none"
+								>
+								</div>
+
+								<div class="relative p-4 mt-auto">
+									<span class="block text-gray-200 text-sm">July 19, 2021</span>
+									<h2 class="text-white text-xl font-semibold transition duration-100 mb-2">New trends in Tech</h2>
+
+									<span class="text-indigo-300 font-semibold">Read more</span>
+								</div>
+							</a>
+							<!-- article - end -->
+
+							<!-- article - start -->
+							<a
+								href="#"
+								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
+							>
+								<img
+									src="./assets/omniman.png"
+									loading="lazy"
+									alt="Photo by Lorenzo Herrera"
+									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+								/>
+
+								<div
+									class="bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none"
+								>
+								</div>
+
+								<div class="relative p-4 mt-auto">
+									<span class="block text-gray-200 text-sm">April 07, 2021</span>
+									<h2 class="text-white text-xl font-semibold transition duration-100 mb-2">
+										Working with legacy stacks
+									</h2>
+
+									<span class="text-indigo-300 font-semibold">Read more</span>
+								</div>
+							</a>
+							<!-- article - end -->
+
+							<!-- article - start -->
+							<a
+								href="#"
+								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
+							>
+								<img
+									src="./assets/mountain.jpg"
+									loading="lazy"
+									alt="Photo by Magicle"
+									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+								/>
+
+								<div
+									class="bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none"
+								>
+								</div>
+
+								<div class="relative p-4 mt-auto">
+									<span class="block text-gray-200 text-sm">March 15, 2021</span>
+									<h2 class="text-white text-xl font-semibold transition duration-100 mb-2">
+										10 best smartphones for devs
+									</h2>
+
+									<span class="text-indigo-300 font-semibold">Read more</span>
+								</div>
+							</a>
+							<!-- article - end -->
+
+							<!-- article - start -->
+							<a
+								href="#"
+								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
+							>
+								<img
+									src="./assets/blackhole.jpg"
+									loading="lazy"
+									alt="Photo by Martin Sanchez"
+									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+								/>
+
+								<div
+									class="bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none"
+								>
+								</div>
+
+								<div class="relative p-4 mt-auto">
+									<span class="block text-gray-200 text-sm">January 27, 2021</span>
+									<h2 class="text-white text-xl font-semibold transition duration-100 mb-2">
+										8 High performance Notebooks
+									</h2>
+
+									<span class="text-indigo-300 font-semibold">Read more</span>
+								</div>
+							</a>
+							<!-- article - end -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="mt-12">
+				<div class="mx-auto max-w-sm text-center">
+					<span class="font-aboreto text-3xl border-b-2 border-blurama text-white">Projects</span>
+				</div>
+
+				<div class="py-6 sm:py-8 lg:py-12">
+					<div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+						<div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8">
+							<!-- article - start -->
+							<a
+								href="#"
+								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
+							>
+								<img
+									src="./assets/shapes.avif"
+									loading="lazy"
+									alt="Photo by Minh Pham"
+									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+								/>
+
+								<div
+									class="bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none"
+								>
+								</div>
+
+								<div class="relative p-4 mt-auto">
+									<h2 class="text-white text-xl font-semibold transition duration-100 mb-2">Image Gallery Website</h2>
+								</div>
+							</a>
+							<!-- article - end -->
+
+							<!-- article - start -->
+							<a
+								href="#"
+								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
+							>
+								<img
+									src="./assets/deer.jpg"
+									loading="lazy"
+									alt="Photo by Lorenzo Herrera"
+									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+								/>
+
+								<div
+									class="bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none"
+								>
+								</div>
+
+								<div class="relative p-4 mt-auto">
+									<h2 class="text-white text-xl font-semibold transition duration-100 mb-2">Wildlife</h2>
+								</div>
+							</a>
+							<!-- article - end -->
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 	</div>
-
-	<div class="container mt-20 leading-10 flex flex-col items-center mx-auto">
-		<div>
-				<span class="font-medium font-inter text-white md:text-2xl">Computer Science student from the
-						<span class="bg-gradient-to-l from-blurama to-pinkrama text-transparent bg-clip-text font-bold font-inter md:text-2xl">
-								Philippines
-						</span>
-				</span>
-		</div>
-
-		<!--  Account Links  -->
-		<AccountLinks>
-			<GitHub/>
-			<LinkedIn/>
-		</AccountLinks>
-	</div>
-
-	<p class="text-white font-inter">I like reading books. The best one I've read so far was <span>Project Hail Mary</span> by <span>Andy Weir</span>. Currently, I'm reading <span>Stolen Focus: Why You Can't Pay Attention -- and How to Think Deeply Again </span> by <span>Johann Hari</span> </p>
-
-</Portfolio>
+</BaseLayout>
