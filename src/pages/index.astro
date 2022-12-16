@@ -2,6 +2,7 @@
 import LinkedIn from "@logos/LinkedIn.astro";
 import GitHub from "@logos/GitHub.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
+import solid from "../assets/solid.png";
 ---
 
 <BaseLayout>
@@ -35,7 +36,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 				<div class="flex gap-x-14 justify-center text-lg py-6 sm:py-8 lg:py-12">
 					<div>
 						<img
-							src="./assets/solid.png"
+							src={solid}
 							alt="Photo by Lorenzo Herrera"
 							class="w-16 h-16 object-cover object-center inset-0 group-hover:scale-110 transition duration-200"
 						/>
