@@ -6,6 +6,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://jahriko.github.io',
 	// Enable React to support React JSX components.
 	integrations: [
 		react(),
