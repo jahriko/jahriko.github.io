@@ -13,6 +13,7 @@ import shapes from "/assets/shapes.avif";
 import mountain from "/assets/mountain.jpg";
 import deer from "/assets/deer.jpg";
 import bh from "/assets/blackhole.jpg";
+import resume from "/assets/Resume.pdf";
 ---
 
 <BaseLayout>
@@ -37,6 +38,12 @@ import bh from "/assets/blackhole.jpg";
 			<div class="flex gap-x-5 justify-center">
 				<GitHub />
 				<LinkedIn />
+			</div>
+
+			<div class="flex justify-center mt-7">
+				<a href={resume} download="Resume" class="p-2  bg-gradient-to-l from-blurama to-pinkrama bg-clip-text hover:text-transparent delay-50 transition-all rounded-xl text-white font-semibold justify-center text-lg"
+					>Download Resume</a
+				>
 			</div>
 
 			<section class="mt-12">
