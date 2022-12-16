@@ -3,6 +3,16 @@ import LinkedIn from "@logos/LinkedIn.astro";
 import GitHub from "@logos/GitHub.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import solid from "/assets/solid.png";
+import java from "/assets/java.png";
+import tailwind from "/assets/tailwind.png";
+import ts from "/assets/ts.png";
+import js from "/assets/js.png";
+import ahmad from "/assets/ahmad.jpg";
+import omni from "/assets/omniman.png";
+import shapes from "/assets/shapes.avif";
+import mountain from "/assets/mountain.jpg";
+import deer from "/assets/deer.jpg";
+import bh from "/assets/blackhole.jpg";
 ---
 
 <BaseLayout>
@@ -49,7 +59,7 @@ import solid from "/assets/solid.png";
 
 					<div class="flex justify-center items-center flex-col">
 						<img
-							src="./assets/java.png"
+							src={java}
 							loading="lazy"
 							alt="Photo by Lorenzo Herrera"
 							class="w-16 h-16 object-contain object-center inset-0 group-hover:scale-110 transition duration-200"
@@ -63,7 +73,7 @@ import solid from "/assets/solid.png";
 
 					<div class="flex justify-center items-center flex-col">
 						<img
-							src="./assets/tailwind.png"
+							src={tailwind}
 							loading="lazy"
 							alt="Photo by Lorenzo Herrera"
 							class="w-16 h-16 object-cover object-center inset-0 group-hover:scale-110 transition duration-200"
@@ -78,13 +88,13 @@ import solid from "/assets/solid.png";
 					<div>
 						<div class="flex justify-center">
 							<img
-								src="./assets/ts.png"
+								src={ts}
 								loading="lazy"
 								alt="Photo by Lorenzo Herrera"
 								class="w-16 h-16 object-cover object-center inset-0 group-hover:scale-110 transition duration-200 mr-8"
 							/>
 							<img
-								src="./assets/js.png"
+								src={js}
 								loading="lazy"
 								alt="Photo by Lorenzo Herrera"
 								class="w-16 h-16 object-cover object-center inset-0 group-hover:scale-110 transition duration-200"
@@ -102,7 +112,7 @@ import solid from "/assets/solid.png";
 
 			<section class="mt-12">
 				<div class="mx-auto max-w-sm text-center">
-					<span class="font-aboreto text-3xl border-b-2 border-blurama text-white"> Blog</span>
+					<span class="font-aboreto text-3xl border-b-2 border-blurama text-white">Blog</span>
 				</div>
 
 				<div class="py-6 sm:py-8 lg:py-12">
@@ -114,7 +124,7 @@ import solid from "/assets/solid.png";
 								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
 							>
 								<img
-									src="./assets/ahmad.jpg"
+									src={ahmad}
 									loading="lazy"
 									alt="Photo by Minh Pham"
 									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
@@ -140,7 +150,7 @@ import solid from "/assets/solid.png";
 								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
 							>
 								<img
-									src="./assets/omniman.png"
+									src={omni}
 									loading="lazy"
 									alt="Photo by Lorenzo Herrera"
 									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
@@ -168,7 +178,7 @@ import solid from "/assets/solid.png";
 								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
 							>
 								<img
-									src="./assets/mountain.jpg"
+									src={mountain}
 									loading="lazy"
 									alt="Photo by Magicle"
 									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
@@ -196,7 +206,7 @@ import solid from "/assets/solid.png";
 								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
 							>
 								<img
-									src="./assets/blackhole.jpg"
+									src={bh}
 									loading="lazy"
 									alt="Photo by Martin Sanchez"
 									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
@@ -236,7 +246,7 @@ import solid from "/assets/solid.png";
 								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
 							>
 								<img
-									src="./assets/shapes.avif"
+									src={shapes}
 									loading="lazy"
 									alt="Photo by Minh Pham"
 									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
@@ -259,7 +269,7 @@ import solid from "/assets/solid.png";
 								class="group h-48 md:h-64 xl:h-96 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative"
 							>
 								<img
-									src="./assets/deer.jpg"
+									src={deer}
 									loading="lazy"
 									alt="Photo by Lorenzo Herrera"
 									class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
